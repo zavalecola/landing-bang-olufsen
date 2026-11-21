@@ -1,0 +1,14 @@
+extends ../layouts/main
+
+block append meta
+  //- Приклад використання prepend/append для додавання Open Graph тегів
+  meta(property='og:title', content='Keepsake Landing')
+  meta(property='og:type', content='website')
+
+block content
+  //- Підключення секцій лендингу через include
+  include ../components/sections/hero
+  include ../components/sections/works
+  include ../components/sections/services
+  include ../components/sections/about
+  include ../components/sections/contact
